@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="horizontal" >
+
+	     <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.25"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/multi_touch_test_X_locs_label" />
+	        
+	        <TextView
+	            android:id="@+id/multi_touch_test_X_locs"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1.0"/>
+	         	         	         
+    	</LinearLayout>
+	         	                 
+	     <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.25"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/multi_touch_test_Y_locs_label" />
+	        
+	        <TextView
+	            android:id="@+id/multi_touch_test_Y_locs"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1.0"/>	         	         	         
+    	</LinearLayout>
+        
+	    <ScrollView
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent" 
+	        android:layout_weight="0.50">
+	        
+	        <TextView
+	            android:id="@+id/multi_touch_test_event_textview"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	        	android:layout_gravity="bottom"/>
+	    </ScrollView>	     
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/multi_touch_test_event_toucharea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:gravity="center"
+        android:background="#BBBBDD"
+        android:text="@string/multi_touch_test_event_toucharea_text" />    
+    
+</LinearLayout>

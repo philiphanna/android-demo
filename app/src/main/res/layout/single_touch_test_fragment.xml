@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/single_touch_test_X_loc_label"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/single_touch_test_X_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"/>
+                
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/single_touch_test_Y_loc_label" 
+            android:textSize="32sp"/>
+        
+        <TextView
+            android:id="@+id/single_touch_test_Y_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"/>
+        
+    </LinearLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="0.25">
+        
+        <TextView
+            android:id="@+id/single_touch_test_event_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        	android:layout_gravity="bottom"
+        	android:textSize="16sp"
+        	android:typeface="monospace"/>
+    </ScrollView>
+       
+    <TextView
+        android:id="@+id/single_touch_test_event_toucharea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:gravity="center"
+        android:background="#BBBBDD"
+        android:text="@string/single_touch_test_event_toucharea_text" />    
+</LinearLayout>
