@@ -64,14 +64,12 @@
             android:name="uk.ac.qub.eeecs.demos.input.AccelerometerTest"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboard|keyboardHidden">
-            -->
 		</activity>
         <activity 
             android:label="@string/demo_assets_test_label"
             android:name="uk.ac.qub.eeecs.demos.storage.AssetsTest"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboard|keyboardHidden">
-            -->
 		</activity>
         <activity 
             android:label="@string/demo_shared_preferences_test_label"
